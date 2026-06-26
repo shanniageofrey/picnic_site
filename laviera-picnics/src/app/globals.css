@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  --color-ink: #0d0d0d;
+  --color-ink-soft: #161413;
+  --color-rose: #c36278;
+  --color-rose-deep: #9c4659;
+  --color-rose-light: #e3a4b3;
+  --color-cream: #f5f1ec;
+  --color-cream-dim: #cdc6bc;
+}
+
+@theme inline {
+  --color-ink: var(--color-ink);
+  --color-ink-soft: var(--color-ink-soft);
+  --color-rose: var(--color-rose);
+  --color-rose-deep: var(--color-rose-deep);
+  --color-rose-light: var(--color-rose-light);
+  --color-cream: var(--color-cream);
+  --color-cream-dim: var(--color-cream-dim);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 300;
+}
+
+::selection {
+  background: var(--color-rose);
+  color: var(--color-ink);
+}
+
+/* thin custom scrollbar, brand-tinted */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-ink);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-rose-deep);
+  border-radius: 8px;
+}
+

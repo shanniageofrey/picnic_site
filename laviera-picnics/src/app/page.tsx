@@ -71,8 +71,8 @@ export default function Home() {
             priority
             className="object-cover opacity-70"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-ink/10" />
-          <div className="absolute inset-0 bg-gradient-to-r from-ink/70 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-linear-to-t from-ink via-ink/40 to-ink/10" />
+          <div className="absolute inset-0 bg-linear-to-r from-ink/70 via-transparent to-transparent" />
         </div>
 
         <div className="relative z-10 mx-auto max-w-7xl w-full px-6 md:px-10 pb-20 md:pb-28 pt-40">
@@ -308,7 +308,7 @@ export default function Home() {
 
       {/* FINAL CTA */}
       <section className="relative bg-rose-deep py-28 md:py-36 overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_20%_20%,_white,_transparent_45%)]" />
+        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_20%_20%,white,transparent_45%)]" />
         <div className="relative mx-auto max-w-3xl px-6 md:px-10 text-center">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}

@@ -188,7 +188,7 @@ export default function BookPage() {
                         name="picnic_date"
                         type="date"
                         required
-                        className={`${inputBase} [color-scheme:dark]`}
+                        className={`${inputBase} [scheme:dark]`}
                       />
                     </div>
                   </div>
@@ -324,7 +324,7 @@ export default function BookPage() {
                   discuss your ideas before booking.
                 </p>
                 <a
-                  href="https://wa.me/15555555555"
+                  href="https://wa.me/255658126962"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-full border border-[#25D366]/40 px-5 py-2.5 text-sm text-[#25D366] hover:bg-[#25D366]/10 transition-colors"

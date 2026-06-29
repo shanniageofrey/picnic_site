@@ -158,7 +158,7 @@ export default function ServicesPage() {
                     {pkg.name}
                   </h2>
                   <p
-                    className={`text-xs uppercase tracking-[0.1em] ${
+                    className={`text-xs uppercase tracking-widest ${
                       pkg.highlight ? "text-rose-light" : "text-rose"
                     }`}
                   >
@@ -284,7 +284,7 @@ export default function ServicesPage() {
 
       {/* CTA */}
       <section className="relative bg-rose-deep py-28 md:py-36 overflow-hidden text-center">
-        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_80%_80%,_white,_transparent_45%)]" />
+        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_80%_80%,white,transparent_45%)]" />
         <div className="relative mx-auto max-w-2xl px-6">
           <motion.h2 {...fadeUp(0)} className="font-display text-cream text-4xl md:text-5xl mb-6">
             Ready to reserve your date?

@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { FiInstagram, FiMail, FiPhone } from "react-icons/fi";
+import { SiTiktok } from "react-icons/si";
+import { FiMail, FiPhone } from "react-icons/fi";
 
 export default function Footer() {
   return (
@@ -57,27 +58,27 @@ export default function Footer() {
               <li className="flex items-center gap-2">
                 <FiMail size={14} className="text-rose" />
                 <a
-                  href="mailto:hello@thelavierapicnics.com"
+                  href="mailto:thelavierapicnics@gmail.com"
                   className="hover:text-cream transition-colors"
                 >
-                  hello@thelavierapicnics.com
+                  thelavierapicnics@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-2">
                 <FiPhone size={14} className="text-rose" />
-                <a href="tel:+15555555555" className="hover:text-cream transition-colors">
-                  (555) 555-5555
+                <a href="tel:+255 658 126 962" className="hover:text-cream transition-colors">
+                  +255 658 126 962
                 </a>
               </li>
               <li className="flex items-center gap-2">
-                <FiInstagram size={14} className="text-rose" />
+                <SiTiktok size={14} className="text-rose" />
                 <a
-                  href="https://instagram.com/thelavierapicnics"
+                  href="https://tiktok.com/@TheLavierapicnics"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-cream transition-colors"
                 >
-                  @thelavierapicnics
+                  @TheLavierapicnics
                 </a>
               </li>
             </ul>
@@ -90,7 +91,7 @@ export default function Footer() {
             reserved.
           </p>
           <p className="text-xs text-cream-dim/70">
-            Designed &amp; built with care.
+            Designed by Shannia Geofrey &amp; built with care.
           </p>
         </div>
       </div>

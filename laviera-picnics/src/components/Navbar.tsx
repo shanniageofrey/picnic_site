@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { FiInstagram, FiMenu, FiX } from "react-icons/fi";
+import Image from "next/image";
 
 const LINKS = [
   { href: "/about", label: "About" },
@@ -33,11 +34,16 @@ export default function Navbar() {
       <nav className="mx-auto max-w-7xl px-6 md:px-10 flex items-center justify-between">
         <Link
           href="/"
-          className="font-display text-xl md:text-2xl tracking-wide text-cream"
           onClick={() => setOpen(false)}
         >
-          The <em className="text-rose not-italic font-medium">Laviera</em>{" "}
-          Picnics
+          <Image 
+          src="/images/laviera_logo.jpg"
+          alt="The Laviera Picnics"
+          width={180}
+          height={100}
+          priority
+          className="h-12 w-auto md:h-24"
+          />
         </Link>
 
         {/* Desktop links */}

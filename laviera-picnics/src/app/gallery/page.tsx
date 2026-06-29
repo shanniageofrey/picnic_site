@@ -70,7 +70,7 @@ export default function GalleryPage() {
       </section>
 
       {/* CATEGORY FILTER — visual only, wire to state to filter when real data is connected */}
-      <section className="bg-ink pb-8 sticky top-[60px] z-40 border-b border-cream/10">
+      <section className="bg-ink pb-8 sticky top-15 z-40 border-b border-cream/10">
         <div className="mx-auto max-w-7xl px-6 md:px-10">
           <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-hide">
             {CATEGORIES.map((cat, i) => (
@@ -79,7 +79,7 @@ export default function GalleryPage() {
                 initial={{ opacity: 0, y: 8 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.06, duration: 0.4 }}
-                className={`shrink-0 rounded-full px-5 py-2 text-xs uppercase tracking-[0.1em] transition-colors duration-300 ${
+                className={`shrink-0 rounded-full px-5 py-2 text-xs uppercase tracking-widest transition-colors duration-300 ${
                   cat === "All"
                     ? "bg-rose text-ink"
                     : "border border-cream/20 text-cream-dim hover:border-rose hover:text-rose"
@@ -117,7 +117,7 @@ export default function GalleryPage() {
                 />
                 {/* Hover overlay */}
                 <div className="absolute inset-0 bg-ink/0 group-hover:bg-ink/40 transition-colors duration-400 flex items-end p-5 opacity-0 group-hover:opacity-100">
-                  <p className="text-cream text-xs uppercase tracking-[0.1em]">
+                  <p className="text-cream text-xs uppercase tracking-widest">
                     {item.alt}
                   </p>
                 </div>
